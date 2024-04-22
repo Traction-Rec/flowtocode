@@ -10,7 +10,7 @@
       "hasInstallScript": true,
       "license": "BSD-3-Clause",
       "dependencies": {
-        "@oclif/core": "^3.26.2",
+        "@oclif/core": "^3.26.4",
         "@salesforce/core": "^7.3.1",
         "@salesforce/sf-plugins-core": "^9.0.1",
         "@types/xml2js": "^0.4.14",
@@ -2917,10 +2917,9 @@
       }
     },
     "node_modules/@oclif/core": {
-      "version": "3.26.2",
-      "resolved": "https://registry.npmjs.org/@oclif/core/-/core-3.26.2.tgz",
-      "integrity": "sha512-Gpn21jKjcOx0TecI1wLJrY/65jtgJx5f1GzTc81oKvEpKes1b3Li2SMZygRaWRpcQ3wjN0d7lTPi8WwLsmTBjA==",
-      "license": "MIT",
+      "version": "3.26.4",
+      "resolved": "https://registry.npmjs.org/@oclif/core/-/core-3.26.4.tgz",
+      "integrity": "sha512-ntfo2ut7enNtAn/jB/dryMUPBM2Fh8Fydmi3k/Ybo6lCGU/hmsPFkBRjCEJAQMyNkK2yVZARaWogdOrcVgFz+w==",
       "dependencies": {
         "@types/cli-progress": "^3.11.5",
         "ansi-escapes": "^4.3.2",
@@ -2931,7 +2930,7 @@
         "cli-progress": "^3.12.0",
         "color": "^4.2.3",
         "debug": "^4.3.4",
-        "ejs": "^3.1.9",
+        "ejs": "^3.1.10",
         "get-package-type": "^0.1.0",
         "globby": "^11.1.0",
         "hyperlinker": "^1.0.0",
@@ -8176,10 +8175,9 @@
       }
     },
     "node_modules/ejs": {
-      "version": "3.1.9",
-      "resolved": "https://registry.npmjs.org/ejs/-/ejs-3.1.9.tgz",
-      "integrity": "sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==",
-      "license": "Apache-2.0",
+      "version": "3.1.10",
+      "resolved": "https://registry.npmjs.org/ejs/-/ejs-3.1.10.tgz",
+      "integrity": "sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==",
       "dependencies": {
         "jake": "^10.8.5"
       },
