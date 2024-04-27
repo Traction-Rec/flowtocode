@@ -21,7 +21,7 @@
         "@oclif/plugin-command-snapshot": "^5.1.7",
         "@salesforce/cli-plugins-testkit": "^5.2.0",
         "@salesforce/dev-scripts": "^9.0.0",
-        "eslint-plugin-sf-plugin": "^1.18.0",
+        "eslint-plugin-sf-plugin": "^1.18.2",
         "oclif": "^4.8.1",
         "shx": "0.3.4",
         "ts-node": "^10.9.2",
@@ -8618,13 +8618,12 @@
       }
     },
     "node_modules/eslint-plugin-sf-plugin": {
-      "version": "1.18.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-sf-plugin/-/eslint-plugin-sf-plugin-1.18.0.tgz",
-      "integrity": "sha512-5Q4yI6Hr07v/lTaivs8A8re2FUXDEGyzzHzBk2cWi4c6iMxUYf/vaZKO6ZSSsc4eCcP11JY3RkDBQn6P33x58g==",
+      "version": "1.18.2",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-sf-plugin/-/eslint-plugin-sf-plugin-1.18.2.tgz",
+      "integrity": "sha512-QkxCu/4aglqlduTCk4d+3C6kl5KoIL6a88HJGLjgm1zWjjxduEeecsBNcHz82KN6FZtV+oONmvXPNoMlwQpvvw==",
       "dev": true,
-      "license": "BSD-3-Clause",
       "dependencies": {
-        "@salesforce/core": "^7.0.0",
+        "@salesforce/core": "^7.3.0",
         "@typescript-eslint/utils": "^6.17.0"
       },
       "engines": {
