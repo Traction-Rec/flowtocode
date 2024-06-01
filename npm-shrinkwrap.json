@@ -12,8 +12,9 @@
       "dependencies": {
         "@oclif/core": "^3.26.2",
         "@salesforce/core": "^7.3.1",
-        "@salesforce/sf-plugins-core": "^9.0.12",
+        "@salesforce/sf-plugins-core": "^9.1.1",
         "@types/xml2js": "^0.4.14",
+        "lodash": "4.17.21",
         "xml2js": "^0.6.2"
       },
       "devDependencies": {
@@ -2333,17 +2334,62 @@
       "license": "BSD-3-Clause"
     },
     "node_modules/@inquirer/confirm": {
-      "version": "3.1.0",
-      "resolved": "https://registry.npmjs.org/@inquirer/confirm/-/confirm-3.1.0.tgz",
-      "integrity": "sha512-nH5mxoTEoqk6WpoBz80GMpDSm9jH5V9AF8n+JZAZfMzd9gHeEG9w1o3KawPRR72lfzpP+QxBHLkOKLEApwhDiQ==",
-      "dev": true,
-      "license": "MIT",
+      "version": "3.1.9",
+      "resolved": "https://registry.npmjs.org/@inquirer/confirm/-/confirm-3.1.9.tgz",
+      "integrity": "sha512-UF09aejxCi4Xqm6N/jJAiFXArXfi9al52AFaSD+2uIHnhZGtd1d6lIGTRMPouVSJxbGEi+HkOWSYaiEY/+szUw==",
       "dependencies": {
-        "@inquirer/core": "^7.1.0",
-        "@inquirer/type": "^1.2.1"
+        "@inquirer/core": "^8.2.2",
+        "@inquirer/type": "^1.3.3"
       },
       "engines": {
         "node": ">=18"
+      }
+    },
+    "node_modules/@inquirer/confirm/node_modules/@inquirer/core": {
+      "version": "8.2.2",
+      "resolved": "https://registry.npmjs.org/@inquirer/core/-/core-8.2.2.tgz",
+      "integrity": "sha512-K8SuNX45jEFlX3EBJpu9B+S2TISzMPGXZIuJ9ME924SqbdW6Pt6fIkKvXg7mOEOKJ4WxpQsxj0UTfcL/A434Ww==",
+      "dependencies": {
+        "@inquirer/figures": "^1.0.3",
+        "@inquirer/type": "^1.3.3",
+        "@types/mute-stream": "^0.0.4",
+        "@types/node": "^20.12.13",
+        "@types/wrap-ansi": "^3.0.0",
+        "ansi-escapes": "^4.3.2",
+        "chalk": "^4.1.2",
+        "cli-spinners": "^2.9.2",
+        "cli-width": "^4.1.0",
+        "mute-stream": "^1.0.0",
+        "signal-exit": "^4.1.0",
+        "strip-ansi": "^6.0.1",
+        "wrap-ansi": "^6.2.0"
+      },
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@inquirer/confirm/node_modules/signal-exit": {
+      "version": "4.1.0",
+      "resolved": "https://registry.npmjs.org/signal-exit/-/signal-exit-4.1.0.tgz",
+      "integrity": "sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==",
+      "engines": {
+        "node": ">=14"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/isaacs"
+      }
+    },
+    "node_modules/@inquirer/confirm/node_modules/wrap-ansi": {
+      "version": "6.2.0",
+      "resolved": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-6.2.0.tgz",
+      "integrity": "sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==",
+      "dependencies": {
+        "ansi-styles": "^4.0.0",
+        "string-width": "^4.1.0",
+        "strip-ansi": "^6.0.0"
+      },
+      "engines": {
+        "node": ">=8"
       }
     },
     "node_modules/@inquirer/core": {
@@ -2399,6 +2445,14 @@
         "node": ">=8"
       }
     },
+    "node_modules/@inquirer/figures": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@inquirer/figures/-/figures-1.0.3.tgz",
+      "integrity": "sha512-ErXXzENMH5pJt5/ssXV0DfWUZqly8nGzf0UcBV9xTnP+KyffE2mqyxIMBrZ8ijQck2nU0TQm40EQB53YreyWHw==",
+      "engines": {
+        "node": ">=18"
+      }
+    },
     "node_modules/@inquirer/input": {
       "version": "2.1.2",
       "resolved": "https://registry.npmjs.org/@inquirer/input/-/input-2.1.2.tgz",
@@ -2414,50 +2468,45 @@
       }
     },
     "node_modules/@inquirer/password": {
-      "version": "1.1.16",
-      "resolved": "https://registry.npmjs.org/@inquirer/password/-/password-1.1.16.tgz",
-      "integrity": "sha512-aZYZVHLUXZ2gbBot+i+zOJrks1WaiI95lvZCn1sKfcw6MtSSlYC8uDX8sTzQvAsQ8epHoP84UNvAIT0KVGOGqw==",
-      "license": "MIT",
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/@inquirer/password/-/password-2.1.9.tgz",
+      "integrity": "sha512-QPtVcT12Fkn0TyuZJelR7QOtc5l1d/6pB5EfkHOivTzC6QTFxRCHl+Gx7Q3E2U/kgJeCCmDov6itDFggk9nkgA==",
       "dependencies": {
-        "@inquirer/core": "^6.0.0",
-        "@inquirer/type": "^1.1.6",
-        "ansi-escapes": "^4.3.2",
-        "chalk": "^4.1.2"
+        "@inquirer/core": "^8.2.2",
+        "@inquirer/type": "^1.3.3",
+        "ansi-escapes": "^4.3.2"
       },
       "engines": {
-        "node": ">=14.18.0"
+        "node": ">=18"
       }
     },
     "node_modules/@inquirer/password/node_modules/@inquirer/core": {
-      "version": "6.0.0",
-      "resolved": "https://registry.npmjs.org/@inquirer/core/-/core-6.0.0.tgz",
-      "integrity": "sha512-fKi63Khkisgda3ohnskNf5uZJj+zXOaBvOllHsOkdsXRA/ubQLJQrZchFFi57NKbZzkTunXiBMdvWOv71alonw==",
-      "license": "MIT",
+      "version": "8.2.2",
+      "resolved": "https://registry.npmjs.org/@inquirer/core/-/core-8.2.2.tgz",
+      "integrity": "sha512-K8SuNX45jEFlX3EBJpu9B+S2TISzMPGXZIuJ9ME924SqbdW6Pt6fIkKvXg7mOEOKJ4WxpQsxj0UTfcL/A434Ww==",
       "dependencies": {
-        "@inquirer/type": "^1.1.6",
+        "@inquirer/figures": "^1.0.3",
+        "@inquirer/type": "^1.3.3",
         "@types/mute-stream": "^0.0.4",
-        "@types/node": "^20.10.7",
+        "@types/node": "^20.12.13",
         "@types/wrap-ansi": "^3.0.0",
         "ansi-escapes": "^4.3.2",
         "chalk": "^4.1.2",
         "cli-spinners": "^2.9.2",
         "cli-width": "^4.1.0",
-        "figures": "^3.2.0",
         "mute-stream": "^1.0.0",
-        "run-async": "^3.0.0",
         "signal-exit": "^4.1.0",
         "strip-ansi": "^6.0.1",
         "wrap-ansi": "^6.2.0"
       },
       "engines": {
-        "node": ">=14.18.0"
+        "node": ">=18"
       }
     },
     "node_modules/@inquirer/password/node_modules/signal-exit": {
       "version": "4.1.0",
       "resolved": "https://registry.npmjs.org/signal-exit/-/signal-exit-4.1.0.tgz",
       "integrity": "sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==",
-      "license": "ISC",
       "engines": {
         "node": ">=14"
       },
@@ -2469,7 +2518,6 @@
       "version": "6.2.0",
       "resolved": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-6.2.0.tgz",
       "integrity": "sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==",
-      "license": "MIT",
       "dependencies": {
         "ansi-styles": "^4.0.0",
         "string-width": "^4.1.0",
@@ -2497,10 +2545,9 @@
       }
     },
     "node_modules/@inquirer/type": {
-      "version": "1.2.1",
-      "resolved": "https://registry.npmjs.org/@inquirer/type/-/type-1.2.1.tgz",
-      "integrity": "sha512-xwMfkPAxeo8Ji/IxfUSqzRi0/+F2GIqJmpc5/thelgMGsjNZcjDDRBO9TLXT1s/hdx/mK5QbVIvgoLIFgXhTMQ==",
-      "license": "MIT",
+      "version": "1.3.3",
+      "resolved": "https://registry.npmjs.org/@inquirer/type/-/type-1.3.3.tgz",
+      "integrity": "sha512-xTUt0NulylX27/zMx04ZYar/kr1raaiFTVvQ5feljQsiAgdm0WPj4S73/ye0fbslh+15QrIuDvfCXTek7pMY5A==",
       "engines": {
         "node": ">=18"
       }
@@ -4965,9 +5012,9 @@
       }
     },
     "node_modules/@salesforce/kit": {
-      "version": "3.1.1",
-      "resolved": "https://registry.npmjs.org/@salesforce/kit/-/kit-3.1.1.tgz",
-      "integrity": "sha512-Cjkh+USp5PtdZmD30r1Y7d+USpIhQz9B48w76esBtYpgqzhyj806LHkVgEfmorLNq2Qe8EO5rtUYd+XZ3rnV9w==",
+      "version": "3.1.2",
+      "resolved": "https://registry.npmjs.org/@salesforce/kit/-/kit-3.1.2.tgz",
+      "integrity": "sha512-si+ddvZDgx9q5czxAANuK5xhz3pv+KGspQy1wyia/7HDPKadA0QZkLTzUnO1Ju4Mux32CNHEb2y9lw9jj+eVTA==",
       "dependencies": {
         "@salesforce/ts-types": "^2.0.9",
         "tslib": "^2.6.2"
@@ -4986,91 +5033,20 @@
       "integrity": "sha512-LiN37zG5ODT6z70sL1fxF7BQwtCX9JOWofSU8iliSNIM+WDEeinnoFtVqPInRSNt8I0RiJxIKCrqstsmQRBNvA=="
     },
     "node_modules/@salesforce/sf-plugins-core": {
-      "version": "9.0.12",
-      "resolved": "https://registry.npmjs.org/@salesforce/sf-plugins-core/-/sf-plugins-core-9.0.12.tgz",
-      "integrity": "sha512-KtZErzUdBrDDONpE6ZbW3V5WfBwUwo07Snttnu4IFs82rbsOkyCG/m02b+mbnGBrwWWy7auZW4e2ciRrmbZGDQ==",
+      "version": "9.1.1",
+      "resolved": "https://registry.npmjs.org/@salesforce/sf-plugins-core/-/sf-plugins-core-9.1.1.tgz",
+      "integrity": "sha512-5d4vGLqb1NZoHvDpuTu96TsFg/lexdnQNWC0h7GhOqxikJBpxk6P1DEbk9HrZWL18Gs1YXO9OCj2g8nKqbIC/Q==",
       "dependencies": {
-        "@inquirer/confirm": "^2.0.17",
-        "@inquirer/password": "^1.1.16",
+        "@inquirer/confirm": "^3.1.9",
+        "@inquirer/password": "^2.1.9",
         "@oclif/core": "^3.26.6",
-        "@salesforce/core": "^7.3.8",
-        "@salesforce/kit": "^3.1.1",
+        "@salesforce/core": "^7.3.9",
+        "@salesforce/kit": "^3.1.2",
         "@salesforce/ts-types": "^2.0.9",
         "chalk": "^5.3.0"
       },
       "engines": {
         "node": ">=18.0.0"
-      }
-    },
-    "node_modules/@salesforce/sf-plugins-core/node_modules/@inquirer/confirm": {
-      "version": "2.0.17",
-      "resolved": "https://registry.npmjs.org/@inquirer/confirm/-/confirm-2.0.17.tgz",
-      "integrity": "sha512-EqzhGryzmGpy2aJf6LxJVhndxYmFs+m8cxXzf8nejb1DE3sabf6mUgBcp4J0jAUEiAcYzqmkqRr7LPFh/WdnXA==",
-      "license": "MIT",
-      "dependencies": {
-        "@inquirer/core": "^6.0.0",
-        "@inquirer/type": "^1.1.6",
-        "chalk": "^4.1.2"
-      },
-      "engines": {
-        "node": ">=14.18.0"
-      }
-    },
-    "node_modules/@salesforce/sf-plugins-core/node_modules/@inquirer/confirm/node_modules/chalk": {
-      "version": "4.1.2",
-      "resolved": "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz",
-      "integrity": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==",
-      "license": "MIT",
-      "dependencies": {
-        "ansi-styles": "^4.1.0",
-        "supports-color": "^7.1.0"
-      },
-      "engines": {
-        "node": ">=10"
-      },
-      "funding": {
-        "url": "https://github.com/chalk/chalk?sponsor=1"
-      }
-    },
-    "node_modules/@salesforce/sf-plugins-core/node_modules/@inquirer/core": {
-      "version": "6.0.0",
-      "resolved": "https://registry.npmjs.org/@inquirer/core/-/core-6.0.0.tgz",
-      "integrity": "sha512-fKi63Khkisgda3ohnskNf5uZJj+zXOaBvOllHsOkdsXRA/ubQLJQrZchFFi57NKbZzkTunXiBMdvWOv71alonw==",
-      "license": "MIT",
-      "dependencies": {
-        "@inquirer/type": "^1.1.6",
-        "@types/mute-stream": "^0.0.4",
-        "@types/node": "^20.10.7",
-        "@types/wrap-ansi": "^3.0.0",
-        "ansi-escapes": "^4.3.2",
-        "chalk": "^4.1.2",
-        "cli-spinners": "^2.9.2",
-        "cli-width": "^4.1.0",
-        "figures": "^3.2.0",
-        "mute-stream": "^1.0.0",
-        "run-async": "^3.0.0",
-        "signal-exit": "^4.1.0",
-        "strip-ansi": "^6.0.1",
-        "wrap-ansi": "^6.2.0"
-      },
-      "engines": {
-        "node": ">=14.18.0"
-      }
-    },
-    "node_modules/@salesforce/sf-plugins-core/node_modules/@inquirer/core/node_modules/chalk": {
-      "version": "4.1.2",
-      "resolved": "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz",
-      "integrity": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==",
-      "license": "MIT",
-      "dependencies": {
-        "ansi-styles": "^4.1.0",
-        "supports-color": "^7.1.0"
-      },
-      "engines": {
-        "node": ">=10"
-      },
-      "funding": {
-        "url": "https://github.com/chalk/chalk?sponsor=1"
       }
     },
     "node_modules/@salesforce/sf-plugins-core/node_modules/chalk": {
@@ -5083,32 +5059,6 @@
       },
       "funding": {
         "url": "https://github.com/chalk/chalk?sponsor=1"
-      }
-    },
-    "node_modules/@salesforce/sf-plugins-core/node_modules/signal-exit": {
-      "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/signal-exit/-/signal-exit-4.1.0.tgz",
-      "integrity": "sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==",
-      "license": "ISC",
-      "engines": {
-        "node": ">=14"
-      },
-      "funding": {
-        "url": "https://github.com/sponsors/isaacs"
-      }
-    },
-    "node_modules/@salesforce/sf-plugins-core/node_modules/wrap-ansi": {
-      "version": "6.2.0",
-      "resolved": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-6.2.0.tgz",
-      "integrity": "sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==",
-      "license": "MIT",
-      "dependencies": {
-        "ansi-styles": "^4.0.0",
-        "string-width": "^4.1.0",
-        "strip-ansi": "^6.0.0"
-      },
-      "engines": {
-        "node": ">=8"
       }
     },
     "node_modules/@salesforce/ts-types": {
@@ -6052,10 +6002,9 @@
       }
     },
     "node_modules/@types/node": {
-      "version": "20.12.7",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.12.7.tgz",
-      "integrity": "sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==",
-      "license": "MIT",
+      "version": "20.13.0",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.13.0.tgz",
+      "integrity": "sha512-FM6AOb3khNkNIXPnHFDYaHerSv8uN22C91z098AnGccVu+Pcdhi+pNUFDi0iLmPIsVE0JBD0KVS7mzUYt4nRzQ==",
       "dependencies": {
         "undici-types": "~5.26.4"
       }
@@ -8925,6 +8874,7 @@
       "version": "3.2.0",
       "resolved": "https://registry.npmjs.org/figures/-/figures-3.2.0.tgz",
       "integrity": "sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==",
+      "dev": true,
       "license": "MIT",
       "dependencies": {
         "escape-string-regexp": "^1.0.5"
@@ -8940,6 +8890,7 @@
       "version": "1.0.5",
       "resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz",
       "integrity": "sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==",
+      "dev": true,
       "license": "MIT",
       "engines": {
         "node": ">=0.8.0"
@@ -11032,7 +10983,6 @@
       "version": "4.17.21",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
-      "dev": true,
       "license": "MIT"
     },
     "node_modules/lodash._reinterpolate": {
@@ -13395,15 +13345,6 @@
       },
       "funding": {
         "url": "https://github.com/sponsors/isaacs"
-      }
-    },
-    "node_modules/run-async": {
-      "version": "3.0.0",
-      "resolved": "https://registry.npmjs.org/run-async/-/run-async-3.0.0.tgz",
-      "integrity": "sha512-540WwVDOMxA6dN6We19EcT9sc3hkXPw5mzRNGM3FkdN/vtE9NFvj5lFAPNwUDmJjXidm3v7TC1cTE7t17Ulm1Q==",
-      "license": "MIT",
-      "engines": {
-        "node": ">=0.12.0"
       }
     },
     "node_modules/run-parallel": {
