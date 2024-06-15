@@ -14,6 +14,7 @@
         "@salesforce/core": "^7.3.1",
         "@salesforce/sf-plugins-core": "^9.0.12",
         "@types/xml2js": "^0.4.14",
+        "lodash": "4.17.21",
         "xml2js": "^0.6.2"
       },
       "devDependencies": {
@@ -21,7 +22,7 @@
         "@oclif/plugin-command-snapshot": "^5.1.7",
         "@salesforce/cli-plugins-testkit": "^5.3.5",
         "@salesforce/dev-scripts": "^9.0.0",
-        "eslint-plugin-sf-plugin": "^1.18.4",
+        "eslint-plugin-sf-plugin": "^1.18.6",
         "oclif": "^4.8.1",
         "shx": "0.3.4",
         "ts-node": "^10.9.2",
@@ -8491,12 +8492,12 @@
       }
     },
     "node_modules/eslint-plugin-sf-plugin": {
-      "version": "1.18.4",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-sf-plugin/-/eslint-plugin-sf-plugin-1.18.4.tgz",
-      "integrity": "sha512-bPYmEh+5ARunhIfBoHc9UqrvPslRcYcloXJRKWqVkvU8tIBAiq2lqp6GWjVuUMPGjhvtUgICMolp6ozjO9wvmA==",
+      "version": "1.18.6",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-sf-plugin/-/eslint-plugin-sf-plugin-1.18.6.tgz",
+      "integrity": "sha512-wq+dEEKTl540nDa8LGurDNXjPHyWBdBQQ74EA2RQgkjEcICYYDe37Od536v5OalXQeJ/SWcOVfZ544lI1lBltQ==",
       "dev": true,
       "dependencies": {
-        "@salesforce/core": "^7.3.8",
+        "@salesforce/core": "^7.3.9",
         "@typescript-eslint/utils": "^6.17.0"
       },
       "engines": {
@@ -11032,7 +11033,6 @@
       "version": "4.17.21",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
-      "dev": true,
       "license": "MIT"
     },
     "node_modules/lodash._reinterpolate": {
