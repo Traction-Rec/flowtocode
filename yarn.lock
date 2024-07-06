@@ -1597,6 +1597,26 @@
     strip-ansi "^6.0.0"
     xml2js "^0.6.2"
 
+"@jsforce/jsforce-node@^3.2.1":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.2.2.tgz#6bc1bf483f52023d63ae76534fc8665b2df215e0"
+  integrity sha512-wQl4iCkwbop3eJfl+PxgFfIEPE2Ka68MvgnxbxVX/yx+NhfiNqbl08uKLAG+VcI40D8sgApfm86Yx7o8Q9PZmw==
+  dependencies:
+    "@sindresorhus/is" "^4"
+    "@types/node" "^18.15.3"
+    abort-controller "^3.0.0"
+    base64url "^3.0.1"
+    csv-parse "^5.5.2"
+    csv-stringify "^6.4.4"
+    faye "^1.4.0"
+    form-data "^4.0.0"
+    fs-extra "^8.1.0"
+    https-proxy-agent "^5.0.0"
+    multistream "^3.1.0"
+    node-fetch "^2.6.1"
+    strip-ansi "^6.0.0"
+    xml2js "^0.6.2"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -1876,21 +1896,21 @@
   resolved "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@salesforce/cli-plugins-testkit@^5.3.5":
-  version "5.3.5"
-  resolved "https://registry.yarnpkg.com/@salesforce/cli-plugins-testkit/-/cli-plugins-testkit-5.3.5.tgz#1aff37ffaba78552a7dcacf62817efb94ae883e6"
-  integrity sha512-fL6EsPDVv3+0u+5CqVsGa+PixqmVElQUsIS5RjUYAs6bvUpBG/vK5EAS+BwWroZhoFgmUgh7hFQJCSssaf7NOQ==
+"@salesforce/cli-plugins-testkit@^5.3.17":
+  version "5.3.17"
+  resolved "https://registry.yarnpkg.com/@salesforce/cli-plugins-testkit/-/cli-plugins-testkit-5.3.17.tgz#b1a66508cf7a5d235d4fe30cf6b0045776ef7a2f"
+  integrity sha512-+cPyjXfuVD3pYjm+EGYC4JowoYq8QXRyTTDlZTVPD8VBe/byyXzxdphjK5gIuKhBYvKwWN1kT3zbno25U49ljQ==
   dependencies:
-    "@salesforce/core" "^7.3.8"
-    "@salesforce/kit" "^3.1.1"
-    "@salesforce/ts-types" "^2.0.9"
+    "@salesforce/core" "^8.1.0"
+    "@salesforce/kit" "^3.1.6"
+    "@salesforce/ts-types" "^2.0.10"
     "@types/shelljs" "^0.8.15"
-    debug "^4.3.1"
+    debug "^4.3.5"
     jszip "^3.10.1"
     shelljs "^0.8.4"
     sinon "^17.0.2"
     strip-ansi "6.0.1"
-    ts-retry-promise "^0.8.0"
+    ts-retry-promise "^0.8.1"
 
 "@salesforce/core@^7.3.1", "@salesforce/core@^7.3.8":
   version "7.3.9"
@@ -1914,6 +1934,30 @@
     proper-lockfile "^4.1.2"
     semver "^7.6.2"
     ts-retry-promise "^0.7.1"
+
+"@salesforce/core@^8.1.0":
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-8.1.1.tgz#26db4e6da3573c4bd223eb05cb3da6aad8b2a311"
+  integrity sha512-PQ58kz0oRk/cjGhmiRj8W+x0Eg2mrWagrA4xMKaXjBAgSgU+V39BaO9IC1G2cAMGy53JJRBO5G876ala4gD44w==
+  dependencies:
+    "@jsforce/jsforce-node" "^3.2.1"
+    "@salesforce/kit" "^3.1.6"
+    "@salesforce/schemas" "^1.9.0"
+    "@salesforce/ts-types" "^2.0.10"
+    ajv "^8.16.0"
+    change-case "^4.1.2"
+    fast-levenshtein "^3.0.0"
+    faye "^1.4.0"
+    form-data "^4.0.0"
+    js2xmlparser "^4.0.1"
+    jsonwebtoken "9.0.2"
+    jszip "3.10.1"
+    pino "^9.2.0"
+    pino-abstract-transport "^1.2.0"
+    pino-pretty "^11.2.1"
+    proper-lockfile "^4.1.2"
+    semver "^7.6.2"
+    ts-retry-promise "^0.8.1"
 
 "@salesforce/dev-config@^4.1.0":
   version "4.1.0"
@@ -1952,13 +1996,12 @@
     typescript "^5.4.3"
     wireit "^0.14.4"
 
-"@salesforce/kit@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/@salesforce/kit/-/kit-3.1.1.tgz"
-  integrity sha512-Cjkh+USp5PtdZmD30r1Y7d+USpIhQz9B48w76esBtYpgqzhyj806LHkVgEfmorLNq2Qe8EO5rtUYd+XZ3rnV9w==
+"@salesforce/kit@^3.1.1", "@salesforce/kit@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.1.6.tgz#aefb39c0e0f325e11f80551ff92cf6979dd74070"
+  integrity sha512-zAYPmCSAvdonDOnL5AzuVRVv0sRMlQd6gi12HDE1964VqSjt5pzlLU90thh3Qq4A1Wxbdu0FbHYx9BvZ4fWPvQ==
   dependencies:
-    "@salesforce/ts-types" "^2.0.9"
-    tslib "^2.6.2"
+    "@salesforce/ts-types" "^2.0.10"
 
 "@salesforce/prettier-config@^0.0.3":
   version "0.0.3"
@@ -1983,12 +2026,10 @@
     "@salesforce/ts-types" "^2.0.9"
     chalk "^5.3.0"
 
-"@salesforce/ts-types@^2.0.9":
-  version "2.0.9"
-  resolved "https://registry.npmjs.org/@salesforce/ts-types/-/ts-types-2.0.9.tgz"
-  integrity sha512-boUD9jw5vQpTCPCCmK/NFTWjSuuW+lsaxOynkyNXLW+zxOc4GDjhtKc4j0vWZJQvolpafbyS8ZLFHZJvs12gYA==
-  dependencies:
-    tslib "^2.6.2"
+"@salesforce/ts-types@^2.0.10", "@salesforce/ts-types@^2.0.9":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@salesforce/ts-types/-/ts-types-2.0.10.tgz#f2107a52b60be6c3fe712f4d40aafad48c6bebe0"
+  integrity sha512-ulGQ1oUGXrmSUi6NGbxZZ7ykSDv439x+WYZpkMgFLC8Dx0TxJXfUAJYeZh7eKO5xI/ob3iyvN+RBcBkp4KFN1w==
 
 "@sindresorhus/is@^4":
   version "4.6.0"
@@ -2857,6 +2898,16 @@ ajv@^8.13.0:
     require-from-string "^2.0.2"
     uri-js "^4.4.1"
 
+ajv@^8.16.0:
+  version "8.16.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.16.0.tgz#22e2a92b94f005f7e0f9c9d39652ef0b8f6f0cb4"
+  integrity sha512-F0twR8U1ZU67JIEtekUcLkXkoO5mMMmgGD8sK/xUFzJ805jxHQl92hImFAqqXMyMYjSPOyUPAwHYhB72g5sTXw==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.4.1"
+
 ansi-colors@4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/ansi-colors/-/ansi-colors-4.1.1.tgz"
@@ -3654,7 +3705,14 @@ dateformat@^4.6.3:
   resolved "https://registry.npmjs.org/dateformat/-/dateformat-4.6.3.tgz"
   integrity sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==
 
-debug@4, debug@4.3.4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4:
+debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4, debug@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.5.tgz#e83444eceb9fedd4a1da56d671ae2446a01a6e1e"
+  integrity sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==
+  dependencies:
+    ms "2.1.2"
+
+debug@4.3.4:
   version "4.3.4"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -4266,6 +4324,11 @@ fast-copy@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/fast-copy/-/fast-copy-3.0.1.tgz"
   integrity sha512-Knr7NOtK3HWRYGtHoJrjkaWepqT8thIVGAwt0p0aUs1zqkAzXZV4vo9fFNwyb5fcqK1GKYFYxldQdIDVKhUAfA==
+
+fast-copy@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-3.0.2.tgz#59c68f59ccbcac82050ba992e0d5c389097c9d35"
+  integrity sha512-dl0O9Vhju8IrcLndv2eU4ldt1ftXMqqfgN4H1cpmGV7P6jeB9FwpN9a2c8DPGE1Ys88rNUJVYDHq73CGAGOPfQ==
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
@@ -6459,10 +6522,35 @@ pino-pretty@^10.3.1:
     sonic-boom "^3.0.0"
     strip-json-comments "^3.1.1"
 
+pino-pretty@^11.2.1:
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-11.2.1.tgz#de9a42ff8ea7b26da93506bb9e49d0b566c5ae96"
+  integrity sha512-O05NuD9tkRasFRWVaF/uHLOvoRDFD7tb5VMertr78rbsYFjYp48Vg3477EshVAF5eZaEw+OpDl/tu+B0R5o+7g==
+  dependencies:
+    colorette "^2.0.7"
+    dateformat "^4.6.3"
+    fast-copy "^3.0.2"
+    fast-safe-stringify "^2.1.1"
+    help-me "^5.0.0"
+    joycon "^3.1.1"
+    minimist "^1.2.6"
+    on-exit-leak-free "^2.1.0"
+    pino-abstract-transport "^1.0.0"
+    pump "^3.0.0"
+    readable-stream "^4.0.0"
+    secure-json-parse "^2.4.0"
+    sonic-boom "^4.0.1"
+    strip-json-comments "^3.1.1"
+
 pino-std-serializers@^6.0.0:
   version "6.2.2"
   resolved "https://registry.npmjs.org/pino-std-serializers/-/pino-std-serializers-6.2.2.tgz"
   integrity sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==
+
+pino-std-serializers@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-7.0.0.tgz#7c625038b13718dbbd84ab446bd673dc52259e3b"
+  integrity sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==
 
 pino@^8.21.0:
   version "8.21.0"
@@ -6480,6 +6568,23 @@ pino@^8.21.0:
     safe-stable-stringify "^2.3.1"
     sonic-boom "^3.7.0"
     thread-stream "^2.6.0"
+
+pino@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-9.2.0.tgz#e77a9516f3a3e5550d9b76d9f65ac6118ef02bdd"
+  integrity sha512-g3/hpwfujK5a4oVbaefoJxezLzsDgLcNJeITvC6yrfwYeT9la+edCK42j5QpEQSQCZgTKapXvnQIdgZwvRaZug==
+  dependencies:
+    atomic-sleep "^1.0.0"
+    fast-redact "^3.1.1"
+    on-exit-leak-free "^2.1.0"
+    pino-abstract-transport "^1.2.0"
+    pino-std-serializers "^7.0.0"
+    process-warning "^3.0.0"
+    quick-format-unescaped "^4.0.3"
+    real-require "^0.2.0"
+    safe-stable-stringify "^2.3.1"
+    sonic-boom "^4.0.1"
+    thread-stream "^3.0.0"
 
 pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   version "4.2.0"
@@ -7097,6 +7202,13 @@ sonic-boom@^3.0.0, sonic-boom@^3.7.0:
   dependencies:
     atomic-sleep "^1.0.0"
 
+sonic-boom@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-4.0.1.tgz#515b7cef2c9290cb362c4536388ddeece07aed30"
+  integrity sha512-hTSD/6JMLyT4r9zeof6UtuBDpjJ9sO08/nmS5djaA9eozT9oOlNdpXSnzcgj4FTqpk3nkLrs61l4gip9r1HCrQ==
+  dependencies:
+    atomic-sleep "^1.0.0"
+
 sort-keys@^4.0.0:
   version "4.2.0"
   resolved "https://registry.npmjs.org/sort-keys/-/sort-keys-4.2.0.tgz"
@@ -7411,6 +7523,13 @@ thread-stream@^2.6.0:
   dependencies:
     real-require "^0.2.0"
 
+thread-stream@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/thread-stream/-/thread-stream-3.1.0.tgz#4b2ef252a7c215064507d4ef70c05a5e2d34c4f1"
+  integrity sha512-OqyPZ9u96VohAyMfJykzmivOrY2wfMSf3C5TtFJVgN+Hm6aj+voFhlK+kZEIv2FBh1X6Xp3DlnCOfEQ3B2J86A==
+  dependencies:
+    real-require "^0.2.0"
+
 through2@^4.0.0:
   version "4.0.2"
   resolved "https://registry.npmjs.org/through2/-/through2-4.0.2.tgz"
@@ -7504,10 +7623,10 @@ ts-retry-promise@^0.7.1:
   resolved "https://registry.npmjs.org/ts-retry-promise/-/ts-retry-promise-0.7.1.tgz"
   integrity sha512-NhHOCZ2AQORvH42hOPO5UZxShlcuiRtm7P2jIq2L2RY3PBxw2mLnUsEdHrIslVBFya1v5aZmrR55lWkzo13LrQ==
 
-ts-retry-promise@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.npmjs.org/ts-retry-promise/-/ts-retry-promise-0.8.0.tgz"
-  integrity sha512-elI/GkojPANBikPaMWQnk4T/bOJ6tq/hqXyQRmhfC9PAD6MoHmXIXK7KilJrlpx47VAKCGcmBrTeK5dHk6YAYg==
+ts-retry-promise@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/ts-retry-promise/-/ts-retry-promise-0.8.1.tgz#ba90eb07cb03677fcbf78fe38e94c9183927e154"
+  integrity sha512-+AHPUmAhr5bSRRK5CurE9kNH8gZlEHnCgusZ0zy2bjfatUBDX0h6vGQjiT0YrGwSDwRZmU+bapeX6mj55FOPvg==
 
 tsconfig-paths@^3.15.0:
   version "3.15.0"
