@@ -1,11 +1,10 @@
-APEX CALL: Execute_Apex_Query
+ACTION CALL: Execute_Apex_Query
 SCREEN: Select_Items_Screen
 LOOP: Action_Loop
   ASSIGNMENT: Create_Request
   ASSIGNMENT: Add_Request
-  END LOOP: Action_Loop
 try:
-  APEX CALL: DoBulkAction
+  ACTION CALL: DoBulkAction
   SCREEN: Confirmation_Screen
 except:
   SCREEN: Fault_Screen

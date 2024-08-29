@@ -92,7 +92,7 @@ export class FlowParser {
     this.elementParseCount.set(element.name, (this.elementParseCount.get(element.name) ?? 0) + 1);
 
     if (this.flowLoopStack.includes(element as Flow.FlowLoop)) {
-      parentNode.addChild(new ParseTreeNode('END LOOP: ' + element.name, element));
+      // parentNode.addChild(new ParseTreeNode('END LOOP: ' + element.name, element));
       return;
     } else if ((this.elementParseCount.get(element.name) ?? 0) > 1) {
       parentNode.addChild(new ParseTreeNode('ALREADY OUTPUT: ' + element.name, element));
@@ -134,7 +134,7 @@ export class FlowParser {
       parentNode.addChild(catchNode);
       this.parseElement(catchNode, faultConnectorElement);
     } else {
-      parentNode.addChild(new ParseTreeNode('APEX CALL: ' + actionElement.name, actionElement));
+      parentNode.addChild(new ParseTreeNode('ACTION CALL: ' + actionElement.name, actionElement));
       this.parseConnector(parentNode, actionElement);
     }
   }
@@ -164,8 +164,8 @@ export class FlowParser {
       this.parseRuleElement(decision, ruleElement);
     }
     if (flowElement.defaultConnector == null) {
-      const elseNode = new ParseTreeNode('END FLOW');
-      decision.addChild(elseNode);
+      // const elseNode = new ParseTreeNode('END DECISION: ' + flowElement.name);
+      // decision.addChild(elseNode);
     } else {
       const elseNode = new ParseTreeNode('DEFAULT:', this.getElementFromConnector(flowElement.defaultConnector));
       decision.addChild(elseNode);
