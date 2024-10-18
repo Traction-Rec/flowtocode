@@ -105,10 +105,11 @@ Convert a flow into pseudocode.
 
 ```
 USAGE
-  $ sf ftc generate code -f <value> [--json] [--flags-dir <value>]
+  $ sf ftc generate code -f <value> [--json] [--flags-dir <value>] [-d <value>]
 
 FLAGS
-  -f, --file=<value>  (required) The flow file to convert to pseudocode.
+  -d, --output=<value>  The output directory for the pseudocode.
+  -f, --file=<value>    (required) The flow file to convert to pseudocode.
 
 GLOBAL FLAGS
   --flags-dir=<value>  Import flag values from a directory.
