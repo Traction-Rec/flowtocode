@@ -6,6 +6,48 @@
 
 Convert Salesforce Flows to pseudocode! Add the pseudocode to source control for more human-friendly diffs.
 
+For example turn [this flow](test/resources/test_decision.flow-meta.xml) into this pseudocode:
+
+    Get_Accounts
+    LOOP: Account_Loop
+      DECISION: Account_Decision
+        CASE: If Account Number starts with 1
+          Delete_Account
+        DEFAULT:
+          Update_Account
+    ACTION CALL: Do_Bulk_Action
+
+## .forceignore
+
+By default the tool creates a `.ftc` pseudocode file in the same directory as the target flow. 
+
+To ensure this doesn't conflict with SF cli functionality, add the following like to the `.forceignore` file:
+
+    # ignore automatically-generated flow pseudocode documentation
+    **/*.ftc
+
+## Husky hook
+
+To have the tool run automatically whenever a flow is updated add this to your `.husky/pre-commit` hook.
+
+    flow_files=$(git diff --cached --name-only | grep '\.flow-meta\.xml$' | xargs -I {} realpath {})
+    if [ -n "$flow_files" ]; then
+        echo "Generating flow to code!"
+    
+        # Check if the sf ftc plugin is installed
+        if ! sf plugins --core | grep -q flowtocode; then
+            echo "sf ftc plugin is not installed. Installing now..."
+            echo "y" | sf plugins install flowtocode
+        fi
+    
+        # Iterate over each file and run the command
+        for file in $flow_files; do
+            sf ftc generate code -f $file
+            ftc_file="${file%.flow-meta.xml}.ftc"
+            git add $ftc_file
+        done
+    fi
+
 ## Learn about `sf` plugins
 
 Salesforce CLI plugins are based on the [oclif plugin framework](<(https://oclif.io/docs/introduction.html)>). Read the [plugin developer guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_plugins.meta/sfdx_cli_plugins/cli_plugins_architecture_sf_cli.htm) to learn about Salesforce CLI plugin development.
@@ -30,7 +72,7 @@ For cross clouds commands, e.g. `sf env list`, we utilize [oclif hooks](https://
 
 This plugin includes sample hooks in the [src/hooks directory](src/hooks). You'll just need to add the appropriate logic. You can also delete any of the hooks if they aren't required for your plugin.
 
-# Everything past here is only a suggestion as to what should be in your specific plugin's description
+# General Information
 
 This plugin is bundled with the [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli). For more information on the CLI, read the [getting started guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm).
 
@@ -39,7 +81,7 @@ We always recommend using the latest version of these commands bundled with the 
 ## Install
 
 ```bash
-sf plugins install flowtocode@x.y.z
+sf plugins install flowtocode
 ```
 
 ## Issues
