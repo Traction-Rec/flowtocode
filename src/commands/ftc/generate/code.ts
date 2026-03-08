@@ -17,7 +17,7 @@ type ParsedXml = {
   Flow: Flow; // Replace 'any' with the actual type if known
 };
 
-export interface FormatterInterface {
+export type FormatterInterface = {
   convertToPseudocode(node: ParseTreeNode, tabLevel?: number): string;
 }
 export default class FtcGenerateCode extends SfCommand<FtcGenerateCodeResult> {
